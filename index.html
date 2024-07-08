@@ -1,0 +1,791 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-car.min.css" integrity="sha512-vpFf+ShbNFLKa6naBlMZXTroLsrJkFrUvyczr/OyFymcijnHczI/35t6C0y7PrwehYR/RDQ5MHNP/Msp+mWuKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/dark-theme.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="assets/img/small_p.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <!--Preloader starts-->
+    <div class="loader js-preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!--Preloader ends-->
+
+    <!-- Theme Switcher Start -->
+    <div class="switch-theme-mode">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <!-- Theme Switcher End -->
+
+    <!-- Page Wrapper End -->
+    <div class="page-wrapper">
+      <!-- Header Section Start -->
+      <header class="header-wrap style1">
+        <div class="header-top">
+          <button type="button" class="close-sidebar">
+            <i class="ri-close-fill"></i>
+          </button>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-8 col-md-12">
+                <div class="header-top-left">
+                  <ul class="contact-info list-style">
+                    <li>
+                      <i class="flaticon-call"></i>
+                      <a href="tel:7788949098">(+91)&nbsp; 7788949098</a>
+                    </li>
+                    <li>
+                      <i class="flaticon-email-1"></i>
+                      <a href="mailto:bismaya madala103@gmail.com"
+                        >bismayamadala103@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <i class="flaticon-pin"></i>
+                      <p>Ganjam, Odisha, India</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="header-top-right">
+                  <ul class="header-top-menu list-style">
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="contact.html">Help</a></li>
+                  </ul>
+                  <div class="select-lang">
+                    <i class="ri-global-line"></i>
+                    <div
+                      class="navbar-option-item navbar-language dropdown language-option"
+                    >
+                      <button
+                        class="dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span class="lang-name"></span>
+                      </button>
+                      <div class="dropdown-menu language-dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                          <img src="assets/img/uk.png" alt="flag" />
+                          English
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <span
+                  class="logo-light"
+                  style="
+                    color: black;
+                    font-family: 'Calistoga', cursive;
+                  "
+                  >BISMAYA</span
+                >
+                <span
+                  class="logo-dark"
+                  style="
+                    color: white;
+                    font-family: 'Calistoga', cursive;
+                  "
+                  >BISMAYA</span
+                >
+              </a>
+              <div
+                class="collapse navbar-collapse main-menu-wrap"
+                id="navbarSupportedContent"
+              >
+                <div class="menu-close xl-none">
+                  <a href="javascript:void(0)">
+                    <i class="ri-close-line"></i
+                  ></a>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item has-dropdown">
+                    <a href="#index" class="nav-link active"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#projects" class="nav-link"> Projects </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link"> About Me </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#blog" class="nav-link"> Blog </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                  </li>
+                  <li class="nav-item xl-none">
+                    <a href="#contact" class="btn style1">Hire Me</a>
+                  </li>
+                </ul>
+                <div class="others-options lg-none">
+                  <div class="header-btn lg-none m-lg-3">
+                    <a href="contact.html" class="btn style1">Hire Me</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="mobile-bar-wrap">
+              <div class="mobile-sidebar">
+                <i class="ri-menu-4-line"></i>
+              </div>
+              <div class="mobile-menu xl-none">
+                <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header Section End -->
+
+      <!-- Hero Section Start -->
+      <section id="index" class="hero-wrap style3 bg-squeeze">
+        <img
+          src="assets/img/hero/hero-shape-10.png"
+          alt="Image"
+          class="hero-shape-one"
+        />
+        <img
+          src="assets/img/hero/hero-shape-15.png"
+          alt="Image"
+          class="hero-shape-two"
+        />
+        <img
+          src="assets/img/hero/hero-shape-14.png"
+          alt="Image"
+          class="hero-shape-three"
+        />
+        <img
+          src="assets/img/hero/hero-shape-11.png"
+          alt="Image"
+          class="hero-shape-four animationFramesTwo"
+        />
+        <div class="hero-slider-one owl-carousel">
+          <div class="hero-slide-item">
+            <div class="container">
+              <div class="row gx-5 align-items-center">
+                <div class="col-md-6">
+                  <div
+                    class="hero-content"
+                    data-speed="0.10"
+                    data-revert="true"
+                  >
+                    <!-- <span>Trainee software Engineer at PCS Global Pvt. Ltd.</span> -->
+                    <h1>
+                      I'm Bismaya madala, a Web Developer.
+                    </h1>
+                    <p>
+                      I Design and Develop Experiences that make people's Lives
+                      simple. I break one big impossible task into several small
+                      possible tasks.
+                    </p>
+                    <div class="hero-btn">
+                      <a
+                        href="assets/files/Bismaya_Madala_Resume.pdf"
+                        class="btn style1"
+                        target="_blank"
+                        >View Resume</a
+                      >
+                      <a
+                        class="play-video "
+                        href="https://github.com/Bismayamadala"
+                        target="_blank">
+                        <span class="play-btn">
+                          <i class="ri-github-fill fs-3"></i>
+                        </span>
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="hero-img-wrap">
+                    <img
+                      src="assets/img/My Pic-2.jpg"      //picture_here
+                      alt="Image"
+                      class="hero-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- Service Charge calculator Start -->
+      <!-- <div class="service-charge-wrap bg-stratos ptb-50">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h1 style="color: #fff; text-align: center" class="fs-2">
+              Incoming Calls are stoped, Do you want a Callback
+            </h1>
+            <div class="text-center mt-20">
+              <a href="contact.html" class="btn style1">Call Me Back</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Service Charge calculator End -->
+
+      <!-- Feature Section Start -->
+      <section class="feature-wrap pt-100 pb-75">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="feature-card style3">
+                <div class="feature-info">
+                  <div class="feature-title">
+                    <span
+                      ><img
+                        src="assets/img/feature/feature-icon-1.png"
+                        alt="Image"
+                    /></span>
+                    <h3>Programming Skills</h3>
+                  </div>
+                  <p>
+                    I am proficient with different technologies of 
+                    <b>JAVA</b>
+                    (Core Java, JDBC, Servlet, JSP)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="feature-card style3">
+                <div class="feature-info">
+                  <div class="feature-title">
+                    <span
+                      ><img
+                        src="assets/img/feature/feature-icon-2.png"
+                        alt="Image"
+                    /></span>
+                    <h3>UI Skills</h3>
+                  </div>
+                  <p>
+                    In UI development i have a good knowledge on
+                    <b>HTML, CSS, Bootstrap, Javascript & Angular</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="feature-card style3">
+                <div class="feature-info">
+                  <div class="feature-title">
+                    <span
+                      ><img
+                        src="assets/img/feature/feature-icon-3.png"
+                        alt="Image"
+                    /></span>
+                    <h3>Frameworks</h3>
+                  </div>
+                  <p>
+                    For Bussiness logic development i have knowlege on
+                    <b>Spring Boot & Micro Services</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Feature Section End -->
+
+      <!-- Why Choose Us Section Start -->
+      <section class="why-choose-wrap style1 pb-100 bg-bunting">
+        <div class="container">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="wh-img-wrap">
+                <img src="https://images.pexels.com/photos/5483070/pexels-photo-5483070.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image" />
+                <img
+                  class="wh-shape-one bounce"
+                  src="assets/img/why-choose-us/wh-shape-1.png"
+                  alt="Image"
+                />
+                <img
+                  class="wh-shape-two animationFramesTwo"
+                  src="assets/img/why-choose-us/wh-shape-2.png"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="wh-content">
+                <div class="content-title style1">
+                  <span>Why Should You Hire Me</span>
+                  <h2>Get World Class &amp; Fastest Web Development</h2>
+                  <p>
+                    I am a &nbsp;highly &nbsp;organized&nbsp; and &nbsp;self
+                    driven &nbsp;software developer with a specialists
+                    understanding of various programming principles and the
+                    software development life...
+                  </p>
+                </div>
+                <div class="feature-item-wrap">
+                  <div class="feature-item">
+                    <span class="feature-icon">
+                      <i class="flaticon-graph"></i>
+                    </span>
+                    <div class="feature-text">
+                      <h3>Work Experience</h3>
+                      <p>
+                        The last 6 months of my experience are devoted to
+                        software development as a java Developer
+                      </p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">
+                      <i class="flaticon-loan-1"></i>
+                    </span>
+                    <div class="feature-text">
+                      <h3>Projects</h3>
+                      <p>
+                        As a software developer, I have developed over 500
+                        programs and have completed over 5 paid and non-paid
+                        Projects.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon">
+                      <i class="flaticon-computer"></i>
+                    </span>
+                    <div class="feature-text">
+                      <h3>Support</h3>
+                      <p>
+                        My clients connect me 24/7, I will take a very minimal
+                        time to serve your problems with a proper and dedicated
+                        manner.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Choose Us Section End -->
+
+      <!-- Service Section Start -->
+      <section id="projects" class="service-wrap style3 ptb-100 bg-rock">
+        <div class="container">
+          <img
+            src="assets/img/service-shape-1.png"
+            alt="Image"
+            class="service-shape-one"
+          />
+          <img
+            src="assets/img/service-shape-2.png"
+            alt="Image"
+            class="service-shape-two"
+          />
+          <div class="section-title style1 text-center mb-40">
+            <span>Projects</span>
+            <h2 class="text-white">Let's focus on some latest Projects</h2>
+          </div>
+          <div class="row gx-5 align-items-center">
+            <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-payment-method"></i>
+                </span>
+                <div class="service-info">
+                  <h3>
+                    <a
+                      href=""
+                      
+                      >Airline Reservation System</a
+                    >
+                  </h3>
+                  <p><b>Java Application</b><br /></p>
+                  <p>
+                    The Airline Reservation System streamlines flight booking and management. Users effortlessly search, book, and manage flights. It provides intuitive interfaces for easy navigation and control over travel plans, ensuring convenience and enjoyable journeys.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-payment-method"></i>
+                </span>
+                <div class="service-info">
+                  <h3>
+                    <a
+                      href=""
+                      
+                      >NETFLIX Clone</a
+                    >
+                  </h3>
+                  <p><b>FrontEnd Application</b><br /></p>
+                  <p>
+                    A Netflix clone is a web or mobile application that emulates the functionalities and user interface of the popular streaming platform, Netflix. A wide array of movies, TV shows, documentaries, and original content organized into various genres and categories.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-payment-method"></i>
+                </span>
+                <div class="service-info">
+                  <h3>
+                    <a
+                      href=""
+                     
+                      >Employee management System</a
+                    >
+                  </h3>
+                  <p><b>Java & Angular Application</b><br /></p>
+                  <p>
+                    An Employee Management System application is a web application designed to streamline HR operations within an organization. It facilitates tasks such as employee records management, attendance tracking and performance evaluation. 
+                  </p>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-computer"></i>
+                </span>
+                <div class="service-info">
+                  <h3>
+                    <a href="" 
+                      >Tour & Travel Application</a
+                    >
+                  </h3>
+                  <p><b>Java Application</b><br /></p>
+                  <p>
+                    The Tour & Travel Application is a web application crafted to streamline travel operations, encompassing tasks such as itinerary management, destination selection, booking facilitation, and trip evaluation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-credit-card"></i>
+                </span>
+                <div class="service-info">
+                  <h3>
+                    <a href="Maintanance.html" target="_blank">BASU Chat</a>
+                  </h3>
+                  <p><b>Java Application</b><br /></p>
+                  <p>
+                    It is a web application used to demonstrate the
+                    Messaging Application Development. You can find the
+                    description on GitHub.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6"> 
+             <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-loan-1"></i>
+                </span>
+                <div class="service-info">
+                  <h3>
+                    <a href="https://github.com/epabitra/HK-Payments-Bank.gi" target="_blank"
+                      >HK Payments Bank</a
+                    >
+                  </h3>
+                  <p><b>Android Application</b><br /></p>
+                  <p>
+                    It is a Android application used to demonstrate
+                    the Banking Application. You can find the description on
+                    GitHub.
+                  </p>
+                </div>
+              </div>
+            </div>  -->
+          </div>
+        </div>
+      </section>
+      <!-- Service Section End -->
+
+      <!-- Whitelabel Partner Section Start -->
+      <section id="about" class="shopping-wrap ptb-100">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12 order-lg-1 order-2">
+              <div class="shopping-content">
+                <img
+                  src="assets/img/shopping/shopping-shape-1.png"
+                  alt="Image"
+                  class="shopping-shape-one moveHorizontal"
+                />
+                <img
+                  src="assets/img/shopping/shopping-shape-2.png"
+                  alt="Image"
+                  class="shopping-shape-two bounce"
+                />
+                <div class="content-title style1">
+                  <span>Education Details</span>
+                  <h2>Java Developer || MCA</h2>
+                  <p>
+                    I recently completed my Master's degree in Computer Science from
+                    BPUT University. During my studies, I gained solid understanding
+                    on different technologies of Java, as well as experience in software
+                    development through various projects. I believe this education has 
+                    prepared me well for a career in software engineering, and I'm excited
+                    to use my skills for a reputated company.
+                  </p>
+                </div>
+                <ul class="content-feature-list list-style">
+                  <li>
+                    <i class="ri-check-double-line"></i>Java Development&nbsp;
+                    || &nbsp;NareshIt, Hyderabad
+                  </li>
+                  <li>
+                    <i class="ri-check-double-line"></i>Master Of Computer
+                    Application (MCA)&nbsp; || &nbsp;BPUT, Berhampur
+                  </li>
+                  <li>
+                    <i class="ri-check-double-line"></i>Bachelor Of 
+                    Science (BSc)&nbsp; || &nbsp;Berhampur University, Berhampur
+                  </li>
+                </ul>
+                <a href="contact.html" class="btn style1">Hire Me</a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 order-lg-2 order-1">
+              <div class="shopping-img-wrap">
+                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" />
+                <img
+                  src="assets/img/shopping/shopping-shape-3.png"
+                  alt="Image"
+                  class="shopping-shape-three"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Online Shopping Section End -->
+
+      <!-- Footer Section Start -->
+      <footer class="footer-wrap bg-rock">
+        <div class="container">
+          <img
+            src="assets/img/footer-shape-1.png"
+            alt="Image"
+            class="footer-shape-one"
+          />
+          <img
+            src="assets/img/footer-shape-2.png"
+            alt="Image"
+            class="footer-shape-two"
+          />
+          <div class="row pt-100 pb-75">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <a href="index.html" class="footer-logo">
+                  <span
+                    class="logo-dark"
+                    style="
+                      color: white;
+                      font-family: 'Calistoga', cursive;
+                      font-size: 6vh;
+                    "
+                    >BISMAYA MADALA</span
+                  >
+                </a>
+                <p class="comp-desc">
+                  My goal is to grow as a Java Developer. I hope you will
+                  consider my candidacy for a role at your prestigious company.
+                  Thank you.
+                </p>
+                <div class="social-link">
+                  <ul class="social-profile list-style style1">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Bismayamadala"
+                      >
+                        <i class="ri-github-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://twitter.com/MadalaBismaya">
+                        <i class="ri-twitter-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/bismayamadala/"
+                      >
+                        <i class="ri-linkedin-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/bismaya_madala/"
+                      >
+                        <i class="ri-instagram-fill"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <h3 class="footer-widget-title">My Services</h3>
+                <ul class="footer-menu list-style">
+                  <li>
+                    <p class="my--menu">
+                      <i class="flaticon-next my--icon"></i>Full Stack Development
+                    </p>
+                  </li>
+                  <li>
+                    <p class="my--menu">
+                      <i class="flaticon-next my--icon"></i>FrontEnd Development
+                    </p>
+                  </li>
+                  <li>
+                    <p class="my--menu">
+                      <i class="flaticon-next my--icon"></i>BackEnd Development
+                    </p>
+                  </li>
+                  <li>
+                    <p class="my--menu">
+                      <i class="flaticon-next my--icon"></i>Freelancer
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <h3 class="footer-widget-title">Quick Links</h3>
+                <ul class="footer-menu list-style">
+                  <li>
+                    <a href="index.html">
+                      <i class="flaticon-next"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="projects.html">
+                      <i class="flaticon-next"></i>
+                      Projects
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blog.html">
+                      <i class="flaticon-next"></i>
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about.html">
+                      <i class="flaticon-next"></i>
+                      About Me
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <i class="flaticon-next"></i>
+                      Contact Me
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <h3 class="footer-widget-title">Address</h3>
+                <p class="newsletter-text">Ganjam, Odisha, India</p>
+                <ul class="contact-info list-style">
+                  <li>
+                    <i class="flaticon-call"></i>
+                    <a href="tel:7788949098">(+91) 7788949098</a>
+                  </li>
+                  <li>
+                    <i class="flaticon-email-1"></i>
+                    <a href="mailto:bismayamadala103@gmail.com">bismayamadala103@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-text">
+          <p>
+            <i class="ri-copyright-line"></i>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Bismaya Madala
+          </p>
+        </div>
+      </footer>
+      <!-- Footer Section End -->
+    </div>
+    <!-- Page Wrapper End -->
+
+    <!-- Back-to-top button Start -->
+    <a href="javascript:void(0)" class="back-to-top bounce"
+      ><i class="ri-arrow-up-s-line"></i
+    ></a>
+    <!-- Back-to-top button End -->
+
+    <!-- Link of JS files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha512-51WDTV7haD9BBDc8RWH2r5TnuSiRyAqEnbGyuKHYn+qpYCrCckxFeqlr1I5UoOULijyLV2vnHO9LS4MrAzHxwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js" integrity="sha512-vYYoQJKYzaJQaOaYxaJhhmxikOJ2SEgHwmCNa0EMP0aRr7opdt4HHrorAwnCyPm8bdW/JBApIomo85YaBX81zA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/tweenmax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
